@@ -1,28 +1,17 @@
-import { Component, useState } from 'react';
+import { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css'
 
-class RenderHome extends Component {
-
+class HomePage extends Component {
 
     render() {
-        function handleclick() {
-        }
         
      return(
-        <div className="login-container">
-        <div className="login-box">
-          <h2>Login</h2>
-          <form>
-            <div className="input-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" id="username" name="username" required />
-            </div>
-            <div className="input-group">
-              <label htmlFor="password">Password</label>
-              <input type="password" id="password" name="password" required />
-            </div>
-            <button type="submit" className="login-button">Login</button>
-          </form>
+        <div className="home-container">
+        <div className="hero-section">
+          <h1>Schuldenapp</h1>
+          <p>Verwalten Sie Ihre Schulden einfach und effizient.</p>
+          <Link to="/login"><button className="cta-button">Loslegen</button> </Link>
         </div>
       </div>
     )
@@ -30,4 +19,4 @@ class RenderHome extends Component {
 
 }
 
-export default RenderHome;
+export default HomePage;
