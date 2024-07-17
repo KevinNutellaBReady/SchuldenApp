@@ -3,6 +3,7 @@ import * as React from 'react';
 import HomePage from './pages/Home/Home'
 import RenderAbout from './pages/About/About'
 import LoginPage from './pages/LoginPage/LoginPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 
 import './App.css';
 
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="about" element={<RenderAbout />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   );
